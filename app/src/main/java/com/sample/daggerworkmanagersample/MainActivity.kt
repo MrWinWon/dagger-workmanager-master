@@ -14,7 +14,7 @@ class MainActivity : Activity() {
         setContentView(R.layout.activity_main)
         hello_button.setOnClickListener {
             WorkManager.getInstance().enqueue(
-                OneTimeWorkRequestBuilder<HelloWorldWorker>().build()
+                OneTimeWorkRequestBuilder<UIUpdaterWorker>().build()
             )
         }
     }

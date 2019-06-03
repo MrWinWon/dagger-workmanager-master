@@ -15,7 +15,8 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         appComponent = buildComponent();
-        SampleWorkerFactory factory = appComponent.factory();
+//        SampleWorkerFactory factory = appComponent.factory();
+        SimpleWorkerFactory factory = appComponent.factory();
         Configuration config = new Configuration.Builder()
                 .setWorkerFactory(factory)
                 .build();
