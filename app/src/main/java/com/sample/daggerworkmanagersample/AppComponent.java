@@ -6,7 +6,7 @@ import dagger.Component;
 import javax.inject.Singleton;
 
 @Singleton
-@Component(modules = {AppModule.class, SampleAssistedInjectModule.class, WorkerBindingModule.class})
+@Component(modules = {AppModule.class, WorkerBindingModule.class})
 public interface AppComponent {
     void inject(LoggerModelImpl loggerModel);
     SampleWorkerFactory factory();

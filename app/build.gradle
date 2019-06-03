@@ -13,8 +13,8 @@ android {
         applicationId "com.sample.daggerworkmanagersample"
         minSdkVersion 19
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -35,7 +35,5 @@ dependencies {
     kapt "com.google.dagger:dagger-compiler:2.16"
     // Work Manager
     implementation "android.arch.work:work-runtime-ktx:1.0.1"
-    // Assisted Inject
-    compileOnly "com.squareup.inject:assisted-inject-annotations-dagger2:0.3.2"
-    kapt "com.squareup.inject:assisted-inject-processor-dagger2:0.3.2"
+
 }
